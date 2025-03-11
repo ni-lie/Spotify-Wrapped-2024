@@ -29,6 +29,7 @@ Ensure you have the following installed before proceeding:
     ```
 
 3. Install dependencies
+
     **Using setup.sh (Recommended)**
 
     Run the setup script to install dependencies:
