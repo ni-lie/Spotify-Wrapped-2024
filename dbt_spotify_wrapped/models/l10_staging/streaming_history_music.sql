@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 SELECT 
     endTime::TIMESTAMP AS endTime,
     artistName,
