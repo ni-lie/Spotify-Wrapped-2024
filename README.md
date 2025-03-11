@@ -55,7 +55,7 @@ Ensure you have the following installed before proceeding:
 ## View materialized models using duckdb
 1. Create or open a persistent duckdb database
     ```bash
-    duckd spotify_db.db
+    duckdb spotify_db.db
     ```
 2. List all tables in the database
     ```sql
