@@ -1,0 +1,6 @@
+dbt_spotify_wrapped:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../spotify_db.db'
