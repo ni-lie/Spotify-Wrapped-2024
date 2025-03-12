@@ -4,5 +4,5 @@
 type: source
 
 connector: "duckdb"
-db: "./spotify_db.db"
+db: "../spotify_db.db"
 sql: "SELECT * FROM streaming_history_music;"
