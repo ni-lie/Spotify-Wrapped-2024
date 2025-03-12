@@ -1,0 +1,10 @@
+# Explore YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/explore-dashboards
+
+type: explore
+
+title: "Streaming History Music Metrics dashboard"
+metrics_view: streaming_history_music_metrics
+
+dimensions: '*'
+measures: '*'

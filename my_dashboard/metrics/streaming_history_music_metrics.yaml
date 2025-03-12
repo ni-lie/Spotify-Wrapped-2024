@@ -1,0 +1,70 @@
+# Metrics view YAML
+# Reference documentation: https://docs.rilldata.com/reference/project-files/dashboards
+# This file was generated using AI.
+
+version: 1
+type: metrics_view 
+
+display_name: Streaming History Music Metrics
+model: streaming_history_music
+timeseries: endTime
+
+dimensions:
+  - name: artistName
+    display_name: Artistname
+    column: artistName
+  - name: trackName
+    display_name: Trackname
+    column: trackName
+
+measures:
+  - name: total_tracks_played_measure
+    display_name: Total Tracks Played
+    expression: COUNT(trackName)
+    description: The total number of tracks played.
+    format_preset: humanize
+  - name: total_artists_played_measure
+    display_name: Total Artists Played
+    expression: COUNT(DISTINCT artistName)
+    description: The total number of unique artists played.
+    format_preset: humanize
+  - name: total_play_time_measure
+    display_name: Total Play Time
+    expression: SUM(msPlayed)
+    description: The total play time in milliseconds for all tracks.
+    format_preset: humanize
+  - name: average_play_time_per_track_measure
+    display_name: Average Play Time per Track
+    expression: AVG(msPlayed)
+    description: The average play time in milliseconds per track.
+    format_preset: humanize
+  - name: max_play_time_single_track_measure
+    display_name: Max Play Time for a Single Track
+    expression: MAX(msPlayed)
+    description: The maximum play time in milliseconds for a single track.
+    format_preset: humanize
+  - name: min_play_time_single_track_measure
+    display_name: Min Play Time for a Single Track
+    expression: MIN(msPlayed)
+    description: The minimum play time in milliseconds for a single track.
+    format_preset: humanize
+  - name: total_play_sessions_measure
+    display_name: Total Play Sessions
+    expression: COUNT(DISTINCT endTime)
+    description: The total number of distinct play sessions based on end time.
+    format_preset: humanize
+  - name: average_tracks_per_session_measure
+    display_name: Average Tracks per Session
+    expression: COUNT(trackName) / COUNT(DISTINCT endTime)
+    description: The average number of tracks played per session.
+    format_preset: humanize
+  - name: average_play_time_per_artist_measure
+    display_name: Average Play Time per Artist
+    expression: SUM(msPlayed) / COUNT(DISTINCT artistName)
+    description: The average play time in milliseconds per artist.
+    format_preset: humanize
+  - name: average_play_time_per_session_measure
+    display_name: Average Play Time per Session
+    expression: SUM(msPlayed) / COUNT(DISTINCT endTime)
+    description: The average play time in milliseconds per session.
+    format_preset: humanize
