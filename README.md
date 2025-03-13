@@ -1,7 +1,9 @@
 # Spotify Wrapped with dbt and duckdb
 
 ## Description
-A simple project that recreates my 2024 spotify wrapped using dbt and duckdb.
+This project recreates my 2024 Spotify Wrapped using dbt and DuckDB, transforming raw listening data into meaningful insights.
+
+**Bonus: An interactive dashboard built using Rill, powered by AI!** 
 
 ## Prerequisites
 Ensure you have the following installed before proceeding:
