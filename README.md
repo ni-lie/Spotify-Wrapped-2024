@@ -1,4 +1,4 @@
-# Spotify Wrapped with dbt and duckdb
+# Spotify Wrapped with dbt and DuckDB
 
 ## Description
 This project recreates my 2024 Spotify Wrapped using dbt and DuckDB, transforming raw listening data into meaningful insights.
