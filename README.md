@@ -56,7 +56,8 @@ Ensure you have the following installed before proceeding:
 ## View materialized models using duckdb
 1. Create or open a persistent duckdb database
     ```bash
-    duckdb spotify_db.db
+    # spotify_db exists in root
+    duckdb ../spotify_db.db
     ```
 2. List all tables in the database
     ```sql
@@ -65,6 +66,12 @@ Ensure you have the following installed before proceeding:
 3. View a table
     ```sql
     SELECT * FROM streaming_history_music LIMIT 5;
+    ```
+
+## View Rill dashboard locally
+1. Open Rill project
+    ```bash
+    rill start my_dashboard
     ```
 
 ## Contributing
