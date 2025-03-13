@@ -2,3 +2,4 @@
 dbt_spotify_wrapped/logs/
 dbt_spotify_wrapped/target/
 dbt_spotify_wrapped/.user.yml
+Spotify-Account-Data/
