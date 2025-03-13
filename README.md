@@ -89,4 +89,4 @@ Ensure you have the following installed before proceeding:
 5. Open a pull request
 
 # License
-Specify your project's license (e.g., MIT, Apache 2.0).
+<!-- Specify your project's license (e.g., MIT, Apache 2.0). -->
